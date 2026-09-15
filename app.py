@@ -55,7 +55,7 @@ all_ans=[]
 for index, col_name in enumerate(X.columns):
   min_v= X[col_name].min()
   max_v= X[col_name].max()
-  id col_name != "Previous_Insurance":
+  if col_name != "Previous_Insurance":
   value = st.sidebar.slider(f"select value for {col_name}",
                             min_value = min_v,
                             max_value = max_v)
