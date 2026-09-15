@@ -6,7 +6,7 @@ import os
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import accuracy_score
-import steamlit as st
+import streamlit as st
 #steamlit is for webapplication project
 
 
