@@ -47,7 +47,7 @@ st.write(df.head())
 
 #create side bar for user input
 st.sidebar.title("fill customer details")
-st.sidebar.image.(img_url)
+st.sidebar.image(img_url)
 
 
 #to get user input
@@ -55,13 +55,13 @@ all_ans=[]
 for index, col_name in enumerate(X.columns):
   min_v= X[col_name].min()
   max_v= X[col_name].max()
-  id xol_name != "Previous_Insurance":
+  id col_name != "Previous_Insurance":
   value = st.sidebar.slider(f"select value for {col_name}",
                             min_value = min_v,
                             max_value = max_v)
 else:
-  value = st.sidebar.number_input(f"select value for {col_name}: ")
-  all.ans.append(value)
+  value = st.sidebar.number_input(f"select value for {col_name} (0:No, 1:Yes): ")
+  all_ans.append(value)
 ud={j:all_ans[i] for i,j in enumerate(X.columns)}
 user_df  = pd.DataFrame(ud, index=[1])
 sr.write(user_df)
