@@ -70,7 +70,7 @@ st.write(user_df)
 #======================prediction=======================
 
 
-if st.button("click ton predict: "):
+if st.button("click to predict: "):
   with st.spinner("predicting..."):
     import time
     time.sleep(2)
